@@ -15,7 +15,6 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider Other)
     {
-        Time.timeScale = 0;
-        
+        Application.LoadLevel(Application.loadedLevel);
     }
 }
