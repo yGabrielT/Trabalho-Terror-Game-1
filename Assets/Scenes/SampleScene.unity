@@ -1838,7 +1838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &309309886
 Transform:
   m_ObjectHideFlags: 0
@@ -1863,7 +1863,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ba6ee2847e0c544418e4a0cf6a64a988, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 65737b3cf17484553acda01f0cb86656, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e58460eb88fce4ab999a15eb521fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionChange: {x: 0, y: 0.01, z: 0}
+  positionChange: {x: 0, y: 0.02, z: 0}
 --- !u!1 &319713604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2303,9 @@ GameObject:
   - component: {fileID: 376779952}
   - component: {fileID: 376779951}
   - component: {fileID: 376779950}
-  - component: {fileID: 376779949}
+  - component: {fileID: 376779954}
+  - component: {fileID: 376779953}
+  - component: {fileID: 376779955}
   m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
@@ -2311,20 +2313,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &376779949
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376779948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &376779950
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2389,6 +2377,128 @@ Transform:
   m_Father: {fileID: 1225895428}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &376779953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376779948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4a4568d9196b94ea40e39c7bc7ea43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &376779954
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376779948}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a8cef30c2ae70514788669ce79b5e7e0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!64 &376779955
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376779948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &390419795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3142,7 +3252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Corra
+  m_Text: "C\u0336\u0357\u0351\u0309\u030F\u0304\u0305\u035D\u0310\u032D\u0333\u0321O\u0336\u035D\u0305\u0343\u0307\u0302\u034A\u035C\u031F\u0322\u033A\u031D\u035A\u033A\u032ER\u0335\u030F\u0352\u0300\u0353\u0319\u034E\u0345R\u0336\u0310\u030D\u0302\u034B\u0306\u0342\u0301\u030F\u0308\u0325\u032A\u0332\u031D\u032D\u031C\u0326\u031F\u0332\u033AA\u0338\u030D\u0350\u0303\u032D\u0347\u0318\u031E"
 --- !u!222 &581172427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5343,9 +5453,9 @@ GameObject:
   - component: {fileID: 1200724743}
   - component: {fileID: 1200724742}
   - component: {fileID: 1200724741}
-  - component: {fileID: 1200724740}
   - component: {fileID: 1200724744}
   - component: {fileID: 1200724745}
+  - component: {fileID: 1200724740}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -5353,19 +5463,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1200724740
-BoxCollider:
+--- !u!64 &1200724740
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200724739}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1200724741
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5441,7 +5552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2e0c232dfea5e4e87e5ae5e885af64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleChange: {x: 0, y: 0.01, z: 0}
+  scaleChange: {x: 0, y: 0.015, z: 0}
 --- !u!114 &1200724745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6943,7 +7054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e58460eb88fce4ab999a15eb521fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionChange: {x: 0, y: 0.01, z: 0}
+  positionChange: {x: 0, y: 0.02, z: 0}
 --- !u!1 &1498078761
 GameObject:
   m_ObjectHideFlags: 0
